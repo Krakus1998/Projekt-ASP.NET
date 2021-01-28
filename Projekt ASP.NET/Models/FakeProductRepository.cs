@@ -14,5 +14,15 @@ namespace Projekt_ASP.NET.Models
                 new Product {ID=2, Name = "Zwei",Description="Ein",Price=1000000,Category="Banan"},
                 new Product {ID=3, Name = "Drei",Description="Ein",Price=1000000,Category="Banan"}
             }.AsQueryable<Product>();
+
+        public void deleteProduct(int productID)
+        {
+            throw new NotImplementedException();
         }
+
+        public void saveProduct(Product product)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

@@ -19,5 +19,11 @@ namespace Projekt_ASP.NET.Controllers
         {
             return View();
         }
+
+        public IActionResult GetById(int id)
+        {
+            Product tmp = productRepository.Products.First(x => x.ID == id);
+            return View(tmp);
+        }
     }
 }
